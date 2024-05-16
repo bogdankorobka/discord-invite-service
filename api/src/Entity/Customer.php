@@ -3,30 +3,27 @@
 namespace App\Entity;
 
 use ApiPlatform\Metadata\ApiResource;
+use ApiPlatform\Metadata\Post;
+use App\State\CustomerPostProcessor;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
-/**
- * This is a dummy entity. Remove it!
- */
-#[ApiResource(mercure: true)]
 #[ORM\Entity]
-class Greeting
+#[ApiResource(
+    operations: [
+        new Post(processor: CustomerPostProcessor::class),
+    ]
+)]
+class Customer
 {
-    /**
-     * The entity ID
-     */
     #[ORM\Id]
-    #[ORM\Column(type: 'integer')]
-    #[ORM\GeneratedValue(strategy: 'SEQUENCE')]
+    #[ORM\GeneratedValue]
+    #[ORM\Column]
     private ?int $id = null;
 
-    /**
-     * A nice person
-     */
-    #[ORM\Column]
+    #[ORM\Column(length: 255)]
     #[Assert\NotBlank]
-    public string $name = '';
+    public ?string $name = null;
 
     public function getId(): ?int
     {
