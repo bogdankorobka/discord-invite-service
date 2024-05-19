@@ -1,5 +1,5 @@
 apiVersion: skaffold/v4beta4
-kind: Config
+kind: Bot
 metadata:
   name: api-platform
 build:

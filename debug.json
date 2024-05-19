@@ -1,0 +1,38 @@
+{
+  "endpoint": "channels/1241270475972415551/messages",
+  "response": {
+    "stdClass": {
+      "type": 0,
+      "channel_id": "1241270475972415551",
+      "content": "$ping asd 123 000",
+      "attachments": [],
+      "embeds": [],
+      "timestamp": "2024-05-19T17:08:23.402000+00:00",
+      "edited_timestamp": null,
+      "flags": 0,
+      "components": [],
+      "id": "1241799630371684486",
+      "author": {
+        "id": "1241271861287976993",
+        "username": "subscription_manager",
+        "avatar": "d96ad60b85213f7a211b755dd9e16dcc",
+        "discriminator": "8034",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "banner_color": null,
+        "clan": null
+      },
+      "mentions": [],
+      "mention_roles": [],
+      "pinned": false,
+      "mention_everyone": false,
+      "tts": false,
+      "referenced_message": null
+    }
+  }
+} []
